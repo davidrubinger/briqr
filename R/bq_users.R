@@ -18,6 +18,8 @@ bq_users <- function (max_results_per_page = 100,
           max_results_per_page %% 1 == 0)) {
         stop("max_results_per_page must be a nonnegative whole number")
     }
+    if (organization == "")  stop("organization is an empty string")
+    if (api_token == "")  stop("api_token is an empty string")
 
     resp <- httr::GET(
         url = paste0(
