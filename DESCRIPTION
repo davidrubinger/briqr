@@ -1,0 +1,22 @@
+Package: briqr
+Title: Interface to the Briq API
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "David",
+           family = "Rubinger",
+           role = c("aut", "cre"),
+           email = "david.rubinger@gmail.com")
+Description: An interface to the Briq API.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends:
+    R (>= 3.5.0)
+Imports:
+    magrittr (>= 1.5),
+    httr (>= 1.4.0),
+    jsonlite (>= 1.6),
+    tibble (>= 2.0.1)
+Suggests: 
+    testthat (>= 2.0.1)
