@@ -8,7 +8,6 @@
 #'
 #' @return Returns a tibble of Briq transactions of your organization
 #' @export
-#' @importFrom magrittr %>%
 bq_transactions <- function (max_results_per_page = 100,
                              organization = Sys.getenv("organization_name"),
                              api_token = Sys.getenv("briq_api_token")) {
@@ -30,18 +29,5 @@ bq_transactions <- function (max_results_per_page = 100,
             user = Sys.getenv("briq_api_token"), password = ""
         )
     )
-    if (httr::http_error(resp)) {
-        stop(paste0("Briq API request failed [", resp$status_code, "]"))
-    }
-    if (httr::http_type(resp) != "application/json") {
-        stop("API did not return json")
-    }
-
-    transactions <-
-        resp %>%
-        httr::content("text") %>%
-        jsonlite::fromJSON(flatten = TRUE) %>%
-        tibble::as_tibble()
-
-    transactions
+    resp_to_tbl(resp)
 }
