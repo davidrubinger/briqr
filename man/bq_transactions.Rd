@@ -4,12 +4,14 @@
 \alias{bq_transactions}
 \title{Briq transactions}
 \usage{
-bq_transactions(max_results_per_page = 100,
+bq_transactions(max_results_per_page = 100, pause_between_pages = 0,
   organization = Sys.getenv("organization_name"),
   api_token = Sys.getenv("briq_api_token"))
 }
 \arguments{
 \item{max_results_per_page}{Maximum number of results per page}
+
+\item{pause_between_pages}{Number of seconds to wait between page requests}
 
 \item{organization}{Name of your Briq organization}
 
