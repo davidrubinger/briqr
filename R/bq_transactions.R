@@ -20,14 +20,23 @@ bq_transactions <- function (max_results_per_page = 100,
     if (organization == "")  stop("organization is an empty string")
     if (api_token == "")  stop("api_token is an empty string")
 
-    resp <- httr::GET(
-        url = paste0(
-            "https://www.givebriq.com/v0/organizations/", organization,
-            "/transactions?per_page=", max_results_per_page
-        ),
-        config = httr::authenticate(
-            user = Sys.getenv("briq_api_token"), password = ""
+    pg <- NULL
+    pgs <- NULL
+    i <- 1
+    while (nrow(pg) > 0 || is.null(pg)) {
+
+        resp <- httr::GET(
+            url = paste0(
+                "https://www.givebriq.com/v0/organizations/", organization,
+                "/transactions?page=", i, "&per_page=", max_results_per_page
+            ),
+            config = httr::authenticate(
+                user = Sys.getenv("briq_api_token"), password = ""
+            )
         )
-    )
-    resp_to_tbl(resp)
+        pg <- resp_to_tbl(resp)
+        pgs <- dplyr::bind_rows(pgs, pg)
+        i <- i + 1
+    }
+    return(pgs)
 }
