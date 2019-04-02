@@ -1,5 +1,8 @@
 context("Converting API response to tibble")
 
-test_that("Tibble is produced", {
-    expect_is(resp_to_tbl(httr::GET("http://httpbin.org/json")), "tbl_df")
+# Response object fixture
+source("www.givebriq.com/v0/organizations/your-organization/users.R")
+
+test_that("Tibble is generated", {
+    expect_is(resp_to_tbl(resp), "tbl_df")
 })
