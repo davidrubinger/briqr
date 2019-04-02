@@ -32,7 +32,7 @@ bq_transactions <- function (max_results_per_page = 100,
     pg <- NULL
     pgs <- NULL
     i <- 1
-    while (nrow(pg) > 0 || is.null(pg)) {
+    while (nrow(pg) >= max_results_per_page || is.null(pg)) {
 
         resp <- httr::GET(
             url = paste0(
