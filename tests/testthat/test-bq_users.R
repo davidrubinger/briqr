@@ -1,18 +1,6 @@
 context("Briq users")
 
 test_that("Error when invalid inputs", {
-    expect_error(bq_users(max_results_per_page = NA_real_))
-    expect_error(bq_users(max_results_per_page = "x"))
-    expect_error(bq_users(max_results_per_page = -1))
-    expect_error(bq_users(max_results_per_page = 1.5))
-    expect_error(
-        bq_users(
-            max_results_per_page = 10, organization = "", api_token = "my_token"
-        )
-    )
-    expect_error(
-        bq_users(
-            max_results_per_page = 10, organization = "my_org", api_token = ""
-        )
-    )
+    expect_error(bq_users(organization = "", api_token = "my_token"))
+    expect_error(bq_users(organization = "my_org", api_token = ""))
 })

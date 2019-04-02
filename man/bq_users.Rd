@@ -4,13 +4,10 @@
 \alias{bq_users}
 \title{Briq users}
 \usage{
-bq_users(max_results_per_page = 100,
-  organization = Sys.getenv("organization_name"),
+bq_users(organization = Sys.getenv("organization_name"),
   api_token = Sys.getenv("briq_api_token"))
 }
 \arguments{
-\item{max_results_per_page}{Maximum number of results per page}
-
 \item{organization}{Name of your Briq organization}
 
 \item{api_token}{Briq API token}
