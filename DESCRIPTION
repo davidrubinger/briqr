@@ -20,4 +20,5 @@ Imports:
     jsonlite (>= 1.6),
     tibble (>= 2.0.1)
 Suggests: 
+    httptest (>= 3.2.2),
     testthat (>= 2.0.1)

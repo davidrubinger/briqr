@@ -1,0 +1,30 @@
+[
+    {
+        "id": "ddfdb19c-e3ad-4300-8ed7-d79e10b9f124",
+        "username": "alice@your-organization.com",
+        "displayName": "Alice",
+        "email": "alice@your-organization.com",
+        "externalRef": null,
+        "firstName": null,
+        "lastName": null,
+        "inactiveBalance": 6,
+        "activeBalance": 1,
+        "role": "user",
+        "created_at": "2018-10-17T09:55:16.829Z",
+        "image": null
+    },
+    {
+        "id": "eb17a3df-c384-46a9-96a1-d7f58912e19a",
+        "username": "laurent@your-organization.com",
+        "displayName": "Laurent",
+        "email": "laurent@your-organization.com",
+        "externalRef": null,
+        "firstName": null,
+        "lastName": null,
+        "inactiveBalance": 5,
+        "activeBalance": 0,
+        "role": "admin",
+        "created_at": "2018-10-17T09:32:19.736Z",
+        "image": null
+    }
+]
