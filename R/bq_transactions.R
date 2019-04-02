@@ -16,8 +16,12 @@ bq_transactions <- function (max_results_per_page = 100,
 
     if (!(is.finite(max_results_per_page) &&
           max_results_per_page >= 0 &&
+          max_results_per_page < 100000 &&
           max_results_per_page %% 1 == 0)) {
-        stop("max_results_per_page must be a nonnegative whole number")
+        stop(paste(
+            "max_results_per_page must be a nonnegative whole number",
+            "less than 100000"
+        ))
     }
     if (!(is.finite(pause_between_pages) && pause_between_pages >= 0)) {
         stop("pause_between_pages must be a nonnegative number")
