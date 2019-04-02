@@ -20,3 +20,14 @@ test_that("Error when invalid inputs", {
         )
     )
 })
+
+with_mock_api({
+    test_that("Tibble is generated", {
+        transactions <- bq_transactions(
+            max_results_per_page = 10,
+            organization = "your-organization",
+            api_token = "briq_api_token"
+        )
+        expect_is(transactions, "tbl_df")
+    })
+})

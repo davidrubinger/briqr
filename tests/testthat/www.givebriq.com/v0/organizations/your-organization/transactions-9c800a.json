@@ -1,0 +1,15 @@
+[
+    {
+    "id": "8f49eb2e-2184-4966-be36-9a86db95bd0d",
+    "from": "Laurent",
+    "to": "Alice",
+    "amount": 1,
+    "comment": "Hello Alice  #TeamSpirit #Teamwork",
+    "app": "give",
+    "created_at": "2018-10-18T08:54:02.853Z",
+    "reaction": null,
+    "reactedAt": null,
+    "user_from_id": "eb17a3df-c384-46a9-96a1-d7f58912e19a",
+    "user_to_id": "ddfdb19c-e3ad-4300-8ed7-d79e10b9f124"
+}
+]
