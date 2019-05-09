@@ -13,6 +13,10 @@ knitr::opts_chunk$set(
 
 # briqr
 
+[![Travis build status](https://travis-ci.org/davidrubinger/briqr.svg?branch=master)](https://travis-ci.org/davidrubinger/briqr)
+
+## Overview
+
 `briqr` provides access to the [Briq API](https://briq.github.io) using R
 
 ## Installation
