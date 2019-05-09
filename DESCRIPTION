@@ -6,6 +6,7 @@ Authors@R:
            family = "Rubinger",
            role = c("aut", "cre"),
            email = "david.rubinger@gmail.com")
+Maintainer: David Rubinger <david.rubinger@gmail.com>
 Description: An interface to the Briq API.
 License: MIT + file LICENSE
 Encoding: UTF-8
