@@ -8,9 +8,10 @@
 
 There were no ERRORs or WARNINGs. 
 
-There was 1 NOTE:
+NOTEs:
 
-* There was 1 false positive in the spell check: Briq
+* New submission
+* One false positive in spell check: Briq
 
 ## Downstream dependencies
 
