@@ -18,3 +18,12 @@ Returns a tibble of Briq users of your organization
 \description{
 List all the 'Briq' users of your organization
 }
+\examples{
+\dontrun{
+# Read organization and api_token from .Renviron file
+bq_users()
+
+# Manually enter in organization and api_token
+bq_users(organization = "My Org", api_token = "xYz123")
+}
+}

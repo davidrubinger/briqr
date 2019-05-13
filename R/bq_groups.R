@@ -7,6 +7,14 @@
 #'
 #' @return Returns a tibble of Briq user groups of your organization
 #' @export
+#' @examples
+#' \dontrun{
+#' # Read organization and api_token from .Renviron file
+#' bq_groups()
+#'
+#' # Manually enter in organization and api_token
+#' bq_groups(organization = "My Org", api_token = "xYz123")
+#' }
 bq_groups <- function (organization = Sys.getenv("organization_name"),
                        api_token = Sys.getenv("briq_api_token")) {
 

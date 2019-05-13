@@ -9,6 +9,14 @@
 #'
 #' @return Returns a tibble of Briq transactions of your organization
 #' @export
+#' @examples
+#' \dontrun{
+#' # Read organization and api_token from .Renviron file
+#' bq_transactions()
+#'
+#' # Manually enter in organization and api_token
+#' bq_transactions(organization = "My Org", api_token = "xYz123")
+#' }
 bq_transactions <- function (max_results_per_page = 100,
                              pause_between_pages = 0,
                              organization = Sys.getenv("organization_name"),

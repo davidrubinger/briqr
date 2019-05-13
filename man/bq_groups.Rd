@@ -18,3 +18,12 @@ Returns a tibble of Briq user groups of your organization
 \description{
 List all the 'Briq' user groups of your organization
 }
+\examples{
+\dontrun{
+# Read organization and api_token from .Renviron file
+bq_groups()
+
+# Manually enter in organization and api_token
+bq_groups(organization = "My Org", api_token = "xYz123")
+}
+}
