@@ -26,9 +26,7 @@ bq_groups <- function (organization = Sys.getenv("organization_name"),
             "https://www.givebriq.com/v0/organizations/", organization,
             "/groups"
         ),
-        config = httr::authenticate(
-            user = Sys.getenv("briq_api_token"), password = ""
-        )
+        config = httr::authenticate(user = api_token, password = "")
     )
     resp_to_tbl(resp)
 }

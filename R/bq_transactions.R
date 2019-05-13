@@ -47,9 +47,7 @@ bq_transactions <- function (max_results_per_page = 100,
                 "https://www.givebriq.com/v0/organizations/", organization,
                 "/transactions?page=", i, "&per_page=", max_results_per_page
             ),
-            config = httr::authenticate(
-                user = Sys.getenv("briq_api_token"), password = ""
-            )
+            config = httr::authenticate(user = api_token, password = "")
         )
         pg <- resp_to_tbl(resp)
         pgs <- dplyr::bind_rows(pgs, pg)
