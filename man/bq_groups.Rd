@@ -16,5 +16,5 @@ bq_groups(organization = Sys.getenv("organization_name"),
 Returns a tibble of Briq user groups of your organization
 }
 \description{
-List all the Briq user groups of your organization
+List all the 'Briq' user groups of your organization
 }

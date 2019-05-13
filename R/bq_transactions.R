@@ -1,6 +1,6 @@
 #' Briq transactions
 #'
-#' List all the Briq transactions of your organization
+#' List all the 'Briq' transactions of your organization
 #'
 #' @param max_results_per_page Maximum number of results per page
 #' @param pause_between_pages Number of seconds to wait between page requests

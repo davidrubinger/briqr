@@ -21,5 +21,5 @@ bq_transactions(max_results_per_page = 100, pause_between_pages = 0,
 Returns a tibble of Briq transactions of your organization
 }
 \description{
-List all the Briq transactions of your organization
+List all the 'Briq' transactions of your organization
 }

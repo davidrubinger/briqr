@@ -16,5 +16,5 @@ bq_users(organization = Sys.getenv("organization_name"),
 Returns a tibble of Briq users of your organization
 }
 \description{
-List all the Briq users of your organization
+List all the 'Briq' users of your organization
 }

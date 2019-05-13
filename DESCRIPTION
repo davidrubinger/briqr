@@ -1,5 +1,5 @@
 Package: briqr
-Title: Interface to the Briq API
+Title: Interface to the 'Briq' API
 Version: 0.1.0
 Authors@R: 
     person(given = "David",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "david.rubinger@gmail.com")
 Maintainer: David Rubinger <david.rubinger@gmail.com>
-Description: An interface to the Briq API.
+Description: An interface to the 'Briq' API <https://briq.github.io>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

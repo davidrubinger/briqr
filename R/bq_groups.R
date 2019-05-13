@@ -1,6 +1,6 @@
 #' Briq user groups
 #'
-#' List all the Briq user groups of your organization
+#' List all the 'Briq' user groups of your organization
 #'
 #' @param organization Name of your Briq organization
 #' @param api_token Briq API token
