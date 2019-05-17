@@ -1,3 +1,5 @@
+# briqr 0.1.0.9000
+
 # briqr 0.1.0
 
 * `bq_users()` returns all the Briq users of your organization
