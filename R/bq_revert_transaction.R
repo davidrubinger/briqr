@@ -1,3 +1,23 @@
+#' Revert Briq transaction
+#'
+#' Revert a 'Briq' transaction
+#'
+#' @param transaction_id ID of transaction to revert
+#' @param organization Name of your Briq organization
+#' @param api_token Briq API token
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' # Read organization and api_token from .Renviron file
+#' bq_revert_transaction(transaction_id = "a1b-2c3")
+#'
+#' # Manually enter in organization and api_token
+#' bq_revert_transaction(
+#'     transaction_id = "a1b-2c3", organization = "My Org", api_token = "xYz123"
+#' )
+#' }
 bq_revert_transaction <- function (transaction_id,
                                    organization = Sys.getenv("organization_name"),
                                    api_token = Sys.getenv("briq_api_token")) {
