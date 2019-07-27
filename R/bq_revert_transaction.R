@@ -32,5 +32,5 @@ bq_revert_transaction <- function (transaction_id,
         ),
         config = httr::authenticate(user = api_token, password = "")
     )
-    if (resp$status_code != 204)  print("Revert not successful")
+    if (resp$status_code != 204)  print("Reversion not successful")
 }
